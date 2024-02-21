@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(48, 34, 78); 
+        }
+        h3,label,p{
+            color: white;
+            text-align: center;
+        }
+        .container{
+            background-color: darkcyan;
+            border-radius: 10%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 20px;
+            
+        }
+        @media(max-width:600px){
+            
+            h3,label{
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            }
+            p{
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            }
+            button{
+                font-size: 20px;
+                background-color: whitesmoke;
+                padding: 5px;
+                border: none;
+                border-radius: 5%;
+                font-size: 15px;
+            }
+            input{
+                width: 80%;
+                height: 20px;
+            }
+
+            .container{
+            background-color: darkgreen;
+            border-radius: 5%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            width: 300px;
+            
+            }
+
+            #googlesignin{
+                background-color: white;
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Welcome!</h3>
+        <button id="googlesignin" onclick="googlesigninbtn()">SIGN IN WITH GOOGLE</button>
+        <hr>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="gmail">GMail</label><br>
+           <input type="email" name="gmail" id="gmail" required>
+           <br><br>
+           <label for="password">Password</label><br>
+           <input type="password" name="password" id="password" required>
+           <br><br>
+           <button onclick="registered()">CREATE ACCOUNT</button>
+        </form>
+        <br>
+        <p>Already have an account ? Log In!</p>
+        <a href="loginpage.html"><button>LOG IN</button></a>
+        
+    </div>
+
+    <script>
+        function googlesigninbtn(){
+            alert("Registered");
+        }
+        function registered(){
+            alert("Check your Email")
+        }
+    </script>
+    
+</body>
+</html>
+
+
